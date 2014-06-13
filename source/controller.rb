@@ -7,19 +7,6 @@ FILENAME = "sample_text.txt"
 
 class Controller
 
-  def self.display_title
-    # clear screen
-    puts "  _______ .______       __   _______  _______  __  .__   __.      _______."
-    puts " /  _____||   _  \\     |  | |   ____||   ____||  | |  \\ |  |     /       |"
-    puts "|  |  __  |  |_)  |    |  | |  |__   |  |__   |  | |   \\|  |    |   (----`"
-    puts "|  | |_ | |      /     |  | |   __|  |   __|  |  | |  . `  |     \\   \\   "
-    puts "|  |__| | |  |\\  \\----.|  | |  |     |  |     |  | |  |\\   | .----)   |   "
-    puts " \\______| | _| `._____||__| |__|     |__|     |__| |__| \\__| |_______/ "
-    puts ""
-    puts "        Jedi Amelia, Jedi Danny, Jedi Bridgette, and Padawan Josh         "
-    # sleep
-    # clear screen
-  end
 
   def self.encrypt(filename, shift = rand(1..25))
     text_array = Controller.read_in_text(filename)
@@ -68,7 +55,7 @@ end
 
 
 
-Controller.display_title
+# Controller.display_title
 # Controller.encrypt('sample_text.txt')
 # Controller.decrypt('sample_text.txt')
-Controller.display_message('sample_text.txt')
+# Controller.display_message('sample_text.txt')
