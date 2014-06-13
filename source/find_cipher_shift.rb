@@ -14,14 +14,14 @@ class Solver
     @text_array = downcase_text(text_array)
     find_char_frequency
     find_most_freq_letter
-    determine_shift_to_e
   end
 
   def determine_shift_to_e
     e_ascii = "e".ord
     letter_ascii = @most_feq_letter.ord
 
-    p shift = e_ascii - letter_ascii
+    shift = e_ascii - letter_ascii
+    return shift
   end
 
   def find_most_freq_letter
@@ -29,7 +29,7 @@ class Solver
   end
 
   def downcase_text(text_array)
-    text_array.map!{|char| char.downcase}
+    text_array.map{|char| char.downcase}
   end
 
   def find_char_frequency
