@@ -7,6 +7,7 @@ FILENAME = "sample_text.txt"
 
 class Controller
 
+
   def self.encrypt(filename, shift = rand(1..25))
     text_array = Controller.read_in_text(filename)
     coded_text_array = shift(text_array, shift)
@@ -48,9 +49,13 @@ class Controller
     end
     f.close
   end
-
 end
 
+
+
+
+
+# Controller.display_title
 # Controller.encrypt('sample_text.txt')
 # Controller.decrypt('sample_text.txt')
-Controller.display_message('sample_text.txt')
+# Controller.display_message('sample_text.txt')
