@@ -1,11 +1,4 @@
-# count how many times letter occurs in array
 
-text = "She saw a secret little clearing, and a secret little hot made of rustic poles. And she had never been here before! She realized it was the quiet place where the growing pheasants were reared; the keeper in his shirt sleeves was kneeling, hammering. The dog trotted forward with a short, sharp bark, and the keeper lifted his face suddenly and saw her. He had a startled look in his eyes.
-
-He straightened himself and saluted, watching her in silence, as she came forward with weakening limbs. He resented the intrusion; he cherished his solitude as his only and last freedom in life."
-
-
-text_array = text.split("")
 ###############WHAT WE READ IN
 class Solver
   attr_accessor :text_array
