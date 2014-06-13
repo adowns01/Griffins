@@ -25,10 +25,10 @@ def shift(arr, shift)
 end
 
 
-sample_string = "aaa aaa aaa aa! aaa! AA Z?"
-sample_string = sample_string.split("")
-pp "original string:"
-p sample_string
+# sample_string = "aaa aaa aaa aa! aaa! AA Z?"
+# sample_string = sample_string.split("")
+# pp "original string:"
+# p sample_string
 
-pp "shifted string:"
-p shift(sample_string, 26)
+# pp "shifted string:"
+# p shift(sample_string, 26)

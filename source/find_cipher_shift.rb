@@ -35,5 +35,3 @@ class Solver
   end
 
 end
-
-Solver.new(text_array)

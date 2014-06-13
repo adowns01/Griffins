@@ -41,26 +41,16 @@ class Controller
     end
   end
 
+  def self.display_message(filename)
+    f = File.open(filename, "r")
+    f.each_line do |line|
+      puts line
+    end
+    f.close
+  end
+
 end
 
-# text_array = "asdlfkkas asdlfkjasdf asdfdjaslkf asdflkdjsalfj asdkfj".split(//)
-
-
-# p Controller.read_in_text(FILENAME)
-# p Controller.save_text(text_array, FILENAME)
-
-# ENCRYPTING
-# text_array = Controller.read_in_text(FILENAME)
-# coded_text_array = shift(text_array, 12)
-# Controller.save_text(coded_text_array, FILENAME)
-
-
-# DECRYPTING
-# coded_text_array = Controller.read_in_text(FILENAME)
-# my_solver = Solver.new(coded_text_array)
-# shift = my_solver.determine_shift_to_e
-# text_array = shift(coded_text_array, shift)
-# Controller.save_text(text_array, FILENAME)
-
-Controller.encrypt('sample_text.txt')
+# Controller.encrypt('sample_text.txt')
 # Controller.decrypt('sample_text.txt')
+Controller.display_message('sample_text.txt')
